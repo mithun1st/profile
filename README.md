@@ -6,8 +6,8 @@ A static website containing a portfolio page and a resume page, built with HTML,
 
 Assuming GitHub Pages is enabled for this repository, the expected URLs are:
 
-- [Portfolio: https://mithun1st.github.io/profile/portfolio.html](https://mithun1st.github.io/profile/portfolio.html)
-- [Resume: https://mithun1st.github.io/profile/resume.html](https://mithun1st.github.io/profile/resume.html)
+- <a href="https://mithun1st.github.io/profile/portfolio.html" target="_blank" rel="noopener noreferrer">Portfolio</a>
+- <a href="https://mithun1st.github.io/profile/resume.html" target="_blank" rel="noopener noreferrer">Resume</a>
 
 ## Run locally
 
