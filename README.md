@@ -6,8 +6,8 @@ A static website containing a portfolio page and a resume page, built with HTML,
 
 Assuming GitHub Pages is enabled for this repository, the expected URLs are:
 
-- [Portfolio: https://mithun1st.github.io/mh/portfolio.html](https://mithun1st.github.io/mh/portfolio.html)
-- [Resume: https://mithun1st.github.io/mh/resume.html](https://mithun1st.github.io/mh/resume.html)
+- [Portfolio: https://mithun1st.github.io/profile/portfolio.html](https://mithun1st.github.io/profile/portfolio.html)
+- [Resume: https://mithun1st.github.io/profile/resume.html](https://mithun1st.github.io/profile/resume.html)
 
 ## Run locally
 
@@ -21,7 +21,7 @@ Open [http://localhost:8000/portfolio.html](http://localhost:8000/portfolio.html
 
 ## Update content
 
-Edit `data.json` to add, change, or remove content:
+Edit `data.json` to update content:
 
 - `personal_information`: name, photo, professional title, contact details, social links, and location
 - `summary`: profile summary
