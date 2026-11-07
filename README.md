@@ -6,8 +6,8 @@ A static website containing a portfolio page and a resume page, built with HTML,
 
 Assuming GitHub Pages is enabled for this repository, the expected URLs are:
 
-- [Portfolio](https://mithun1st.github.io/mh/portfolio.html)
-- [Resume](https://mithun1st.github.io/mh/resume.html)
+- [Portfolio: https://mithun1st.github.io/mh/portfolio.html](https://mithun1st.github.io/mh/portfolio.html)
+- [Resume: https://mithun1st.github.io/mh/resume.html](https://mithun1st.github.io/mh/resume.html)
 
 ## Run locally
 
@@ -17,9 +17,9 @@ From the project directory, start a local web server:
 http.server 8000
 ```
 
-Open [http://localhost:8000/portfolio.html](http://localhost:8000/portfolio.html). The page must be served over HTTP so it can fetch `data.json`.
+Open [http://localhost:8000/portfolio.html](http://localhost:8000/portfolio.html), [http://localhost:8000/resume.html](http://localhost:8000/resume.html).. The page must be served over HTTP so it can fetch `data.json`.
 
-## Update portfolio content
+## Update content
 
 Edit `data.json` to add, change, or remove content:
 

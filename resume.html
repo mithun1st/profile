@@ -516,7 +516,15 @@
             try {
                 await document.fonts.ready;
                 await Promise.all(
-                    Array.from(resume.images, image => image.decode())
+                    Array.from(resume.querySelectorAll("img"), image => {
+                        if (image.complete) return Promise.resolve();
+                        return new Promise((resolve, reject) => {
+                            image.addEventListener("load", resolve, { once: true });
+                            image.addEventListener("error", () => {
+                                reject(new Error(`Could not load resume image: ${image.src}`));
+                            }, { once: true });
+                        });
+                    })
                 );
 
                 const name = resume.querySelector("h1")?.textContent.trim() || "Resume";
@@ -546,7 +554,8 @@
                     .save();
             } catch (error) {
                 console.error("PDF download failed:", error);
-                alert(`Could not download the PDF: ${error.message}`);
+                const message = error instanceof Error ? error.message : String(error);
+                alert(`Could not download the PDF: ${message || "Unknown error"}`);
             } finally {
                 button.disabled = false;
                 button.textContent = originalLabel;
