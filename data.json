@@ -1,0 +1,257 @@
+{
+    "personal_information": {
+        "full_name": "Mahadi Hassan Mithun",
+        "photo": "assets/photo_v1.png",
+        "professional_title": "Software Engineer | Flutter | Golang | SQL",
+        "phone": "+8801751001003",
+        "email": "mithun.2121@yahoo.com",
+        "github": "https://github.com/mithun1st",
+        "linkedin": "https://linkedin.com/in/mithun1st",
+        "location": "Dhaka, Bangladesh"
+    },
+    "summary": "I'm a highly skilled and motivated Software Engineer with a Bachelor's degree in Computer Science and Engineering. My expertise spans both frontend and backend development, where I leverage my strong problem-solving skills to create efficient and innovative solutions. With a passion for technology and a commitment to staying current with industry trends, I bring a combination of technical proficiency and creative problem-solving to any software development project.",
+    "work_experience": [
+        {
+            "company": "Efficient Software Solutions",
+            "start": "2023-12-01",
+            "end": null,
+            "title": "Software Engineer II",
+            "description": "At ESS, specializing in software development for Ireland and Europe, we place a strong emphasis on efficiency, creativity, and a steadfast commitment to delivering top-notch mobile applications. As a software engineer within the organization, I contribute to the development and enhancement of mobile applications, ensuring they meet the highest standards of functionality and user experience."
+        },
+        {
+            "company": "eAppair (EON Systems)",
+            "start": "2022-07-01",
+            "end": "2023-12-01",
+            "title": "Software Engineer",
+            "description": "Since joining EON company in July 2022, the individual has been actively engaged in various areas. They have been instrumental in working on both frontend and backend development, contributing significantly to research and development (R&D) efforts. Additionally, they demonstrate expertise in system analysis and proficiently manage database systems (DBMS)."
+        }
+    ],
+    "projects": [
+        {
+            "name": "Churchfield- Qsmart (ERP)",
+            "start": "2023-12-01",
+            "end": null,
+            "role": "Frontend",
+            "url": "https://play.google.com/store/apps/details?id=ie.chserp.churchfieldhomeservices",
+            "description": "The Churchfield app is the official mobile platform for employees, contractors, and approved partners working with Churchfield Home Services, Ireland's trusted SEAI-registered One Stop Shop for home energy upgrades. It supports the smooth delivery of our end-to-end retrofit process, helping our teams provide high-quality home energy upgrades that improve comfort, reduce energy costs, and support a cleaner future",
+            "images": [
+                "assets/qsmart/1.jpeg",
+                "assets/qsmart/2.jpeg",
+                "assets/qsmart/3.jpeg",
+                "assets/qsmart/4.jpeg",
+                "assets/qsmart/5.jpeg",
+                "assets/qsmart/6.jpeg"
+            ]
+        },
+        {
+            "name": "Pomodoro Timer (Terminal)",
+            "start": "2026-06-01",
+            "end": "2026-07-01",
+            "role": "Open Source",
+            "url": "https://github.com/mithun1st/ptimer",
+            "description": "A command-line interface (CLI) pomodoro timer application built in Go that helps you boost productivity with customizable focus sessions.\nInstall ptimer:\n$ brew install mithun1st/mh/ptimer\n1. Three Pomodoro Modes\n2. Notification Support\n3. View Log\n4. Quick Timer With Flag\nStay focused, stay productive.",
+            "images": [
+                "assets/pomodoro/1.png",
+                "assets/pomodoro/2.png",
+                "assets/pomodoro/3.png",
+                "assets/pomodoro/4.png",
+                "assets/pomodoro/5.png",
+                "assets/pomodoro/6.png",
+                "assets/pomodoro/7.png",
+                "assets/pomodoro/8.png"
+            ]
+        },
+        {
+            "name": "Micro Serve (Flutter Package)",
+            "start": "2024-05-01",
+            "end": "2025-01-01",
+            "role": "Open Source",
+            "url": "https://pub.dev/packages/micro_serve",
+            "description": "The micro_serve package for Flutter is designed to initialize an HTTP server that efficiently manages requests and server-side operations within applications using raw Dart code.\nHTTP Handling: Manage incoming HTTP requests and send responses.\nRouting: Define routes (GET, POST, PUT, DELETE, PATCH) and link them to request handlers.\nRequest Parsing: Read and parse query parameters, headers and body from requests.\nResponse Handling: Create and send responses with status codes and content.\nError Handling: Gracefully manage errors and send appropriate error responses.",
+            "images": [
+                "assets/micro_serve/0.gif",
+                "assets/micro_serve/1.png",
+                "assets/micro_serve/2.png",
+                "assets/micro_serve/3.png",
+                "assets/micro_serve/4.png",
+                "assets/micro_serve/5.png",
+                "assets/micro_serve/6.png"
+            ]
+        },
+        {
+            "name": "Muslim Vision",
+            "start": "2023-05-01",
+            "end": "2024-03-01",
+            "role": "Full Stack",
+            "url": "https://play.google.com/store/apps/details?id=com.muslim_vision",
+            "description": "xplore the ultimate Islamic companion app – Muslim Vision. Designed with the Muslim vision in mind, our app is your essential tool for navigating Ramadan 2024 and beyond. Whether you're seeking to strengthen your connection with Allah, stay organized during Ramadan, or deepen your understanding of Islamic teachings, Muslim Vision is here to guide you every step of the way.\nRamadan Ready, Zakat Calculator, Quran & Audio Quran, Real-Time Qibla Finder, Salah/Prayer Alarm, Muslim Prayer Planner, Hadith & Duas, Tasbih Feature, Prayer Procedure.",
+            "images": [
+                "assets/muslim_vision/1.jpeg",
+                "assets/muslim_vision/2.jpeg",
+                "assets/muslim_vision/3.jpeg",
+                "assets/muslim_vision/4.jpeg",
+                "assets/muslim_vision/5.jpeg"
+            ]
+        },
+        {
+            "name": "Hypos",
+            "start": "2022-01-01",
+            "end": "2024-02-01",
+            "role": "Full Stack",
+            "url": "https://hypostech.com",
+            "description": "HYPOS Tech is specially designed for the Restaurant and Takeaway industry. Restaurants and takeaways equate to a large portion of the UK market, it is imperative that the industry has an effective management system.\nWe have created a complete EPOS Solution that works both online and offline with real time cloud-based synchronisation and backup; allowing you to manage your business better. By helping to reduce costs, improve cash flow and prevent the loss of sales, this system improves the speed and efficiency of transactions, allowing you to focus on your customers.",
+            "images": [
+                "assets/hypos/1.jpeg",
+                "assets/hypos/2.jpeg",
+                "assets/hypos/3.jpeg",
+                "assets/hypos/4.jpeg"
+            ]
+        },
+        {
+            "name": "Delivery Assistant",
+            "start": "2023-10-01",
+            "end": "2023-11-01",
+            "role": "Backend",
+            "description": "Empowering delivery operations, the DA app efficiently manages orders, enables seamless payment collection, and provides access to comprehensive delivery reports for enhanced business insights.",
+            "images": [
+                "assets/delivery_assistant/1.jpeg",
+                "assets/delivery_assistant/2.jpeg"
+            ]
+        },
+        {
+            "name": "NBR (GOV)",
+            "start": "2023-01-01",
+            "end": "2023-11-01",
+            "role": "Frontend",
+            "url": null,
+            "description": "The NBR mobile app offers tax-related services such as checking, calculating, and filing taxes. It includes informative tax guides, updates on deadlines, and features a Point of Sale (POS) for businesses' transaction processing.",
+            "images": [
+                "assets/nbr/1.jpeg",
+                "assets/nbr/2.jpeg",
+                "assets/nbr/3.jpeg",
+                "assets/nbr/4.jpeg",
+                "assets/nbr/5.png",
+                "assets/nbr/6.jpeg"
+            ]
+        },
+        {
+            "name": "Face Attendance",
+            "start": "2023-02-01",
+            "end": "2023-04-01",
+            "role": "Frontend",
+            "url": null,
+            "description": "This app simplifies attendance tracking through facial recognition technology. Users effortlessly log attendance, while administrators manage the system via a user-friendly control panel. We ensure secure face verification by integrating with Microsoft Azure.",
+            "images": [
+                "assets/face_attendance/1.jpeg",
+                "assets/face_attendance/2.jpeg",
+                "assets/face_attendance/3.jpeg"
+            ]
+        },
+        {
+            "name": "Mit-E Bot Controller (IOT)",
+            "start": "2020-09-01",
+            "end": "2020-12-01",
+            "role": "Full Stack",
+            "url": "https://github.com/mithun1st/MitE-Bot",
+            "description": "A JAVA software enabling remote monitoring and control of smart devices. Supporting LAN and IOT connections, it runs seamlessly offline and online across all operating systems. This software transmits signals, reads multiple sensor values, and features easy IP-Cam setup for video streaming.",
+            "images": [
+                "assets/mite_bot/1.jpeg",
+                "assets/mite_bot/2.jpeg",
+                "assets/mite_bot/3.jpeg",
+                "assets/mite_bot/4.jpeg",
+                "assets/mite_bot/5.jpeg",
+                "assets/mite_bot/6.jpeg"
+            ]
+        }
+    ],
+    "skills": {
+        "technical_skills": [
+            "Problem Solving",
+            "Hardware Programming",
+            "Debugging",
+            "DSA",
+            "RDBMS"
+        ],
+        "programming_languages": [
+            "Java",
+            "Dart",
+            "Go",
+            "JS",
+            "C++"
+        ],
+        "frameworks": [
+            "Flutter",
+            "Golang",
+            "Nodejs",
+            "Arduino"
+        ],
+        "databases": [
+            "Oracle",
+            "Firebase",
+            "PostgreSQL",
+            "SQL"
+        ],
+        "DSA": [
+            "Array",
+            "Hashing",
+            "Two Pointers",
+            "Stack",
+            "Binary Search",
+            "Sliding Window",
+            "Linked List",
+            "Tree"
+        ],
+        "tools_and_environments": [
+            "VsCode",
+            "Android Studio",
+            "SQL Developer",
+            "Fedora Linux"
+        ]
+    },
+    "education": [
+        {
+            "institution": "North Bengal International University",
+            "start": "2017-01-01",
+            "end": "2021-12-01",
+            "degree": "Computer Science and Engineering - Bachelor of Science"
+        },
+        {
+            "institution": "BCSS College",
+            "start": "2013-01-01",
+            "end": "2015-12-01",
+            "degree": "Science - Higher Secondary School Certificate"
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "proficiency": "Professional"
+        },
+        {
+            "language": "Bengali",
+            "proficiency": "Mother Tongue"
+        }
+    ],
+    "achievements": [
+        {
+            "name": "Leet Code (leetcode.com/mithun1st)",
+            "associated": "I chose to practice DSA, problem-solving and refine my skills",
+            "result": "Solved 150+"
+        },
+        {
+            "name": "Programming Contest (Summer-2019)",
+            "associated": "North Bengal International University",
+            "result": "Runners UP"
+        },
+        {
+            "name": "Participate ACM ICPC (Spring-2018)",
+            "associated": "Daffodil International University",
+            "result": "Participate"
+        },
+        {
+            "name": "Programming Contest (Fall-2017)",
+            "associated": "North Bengal International University",
+            "result": "Champion"
+        }
+    ]
+}

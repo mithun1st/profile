@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional resume of a Software Engineer.">
+    <title>Resume | Mahadi Hassan Mithun</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.3/html2pdf.bundle.min.js"
+        integrity="sha384-1Rq385dzyHeeImKREXc2dTf1lhBKJHL8YR6phOUkikTCsUwGgDyWRoGv8KVG2+qY" crossorigin="anonymous"
+        defer></script>
+
+    <style>
+        :root {
+            --primary: #243b53;
+            --accent: #3973a9;
+            --text: #334155;
+            --muted: #718096;
+            --border: #e5eaf0;
+            --background: #f4f6f8;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family: Inter, "Segoe UI", Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.65;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        .toolbar {
+            max-width: 850px;
+            margin: 24px auto 0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .toolbar-button {
+            padding: 10px 18px;
+            border-radius: 5px;
+            border: 1px solid var(--primary);
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .toolbar-button:disabled {
+            cursor: wait;
+            opacity: 0.7;
+        }
+
+        .download-button {
+            background: var(--primary);
+            color: white;
+        }
+
+        .print-button {
+            background: white;
+            color: var(--primary);
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: 14px auto 40px;
+            padding: 52px 62px;
+            background: var(--white);
+            box-shadow: 0 4px 25px rgba(15, 23, 42, 0.045);
+        }
+
+        /* Header */
+
+        .header {
+            display: grid;
+            grid-template-columns: 105px minmax(0, 1fr) 220px;
+            align-items: center;
+            gap: 22px;
+            padding-bottom: 27px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .header-identity {
+            min-width: 0;
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 29px;
+            font-weight: 750;
+            letter-spacing: -0.8px;
+            line-height: 1.3;
+        }
+
+        .professional-title {
+            margin: 5px 0 0;
+            color: var(--accent);
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .profile-photo {
+            width: 105px;
+            height: 105px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #edf2f7;
+            flex-shrink: 0;
+        }
+
+        /* Contacts */
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 7px;
+            min-width: 0;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .contact-item {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            min-width: 0;
+            text-align: right;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-item a {
+            color: var(--muted);
+            overflow-wrap: anywhere;
+        }
+
+        .contact-item a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        .contact-icon {
+            width: 15px;
+            height: 15px;
+            flex: 0 0 15px;
+            color: var(--primary);
+        }
+
+        /* Sections */
+
+        section {
+            margin-top: 27px;
+        }
+
+        h2 {
+            margin: 0 0 14px;
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 750;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .section-content {
+            padding-left: 15px;
+            border-left: 2px solid var(--border);
+        }
+
+        h3 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+
+        .description {
+            color: var(--text);
+            font-size: 13px;
+        }
+
+        /* Common items */
+
+        .item {
+            margin-bottom: 18px;
+            break-inside: avoid;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 5px 15px;
+        }
+
+        .meta {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .subheading {
+            margin-top: 2px;
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .project-link {
+            color: var(--accent);
+            font-size: 12px;
+            overflow-wrap: anywhere;
+            text-decoration: underline;
+        }
+
+        .project-link:hover {
+            color: var(--accent);
+        }
+
+        /* Projects */
+
+        .project-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 2px 15px;
+            margin-top: 2px;
+        }
+
+        .project-meta {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: right;
+        }
+
+        .project-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 9px;
+        }
+
+        .project-gallery img {
+            width: 90px;
+            height: 60px;
+            object-fit: cover;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+
+        /* Skills */
+
+        .skill-group {
+            margin: 0 0 9px;
+            font-size: 13px;
+        }
+
+        .skill-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .skill-group strong {
+            display: inline;
+            color: var(--primary);
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+        .tags {
+            color: var(--text);
+        }
+
+        /* Achievements */
+
+        .achievement-list {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+        }
+
+        .achievement-card {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 4px 15px;
+            padding-bottom: 12px;
+            break-inside: avoid;
+        }
+
+        .achievement-card:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .achievement-name {
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .achievement-result {
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 700;
+            text-align: right;
+        }
+
+        .achievement-associated {
+            grid-column: 1 / -1;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .language-item {
+            margin: 0 0 9px;
+            font-size: 13px;
+        }
+
+        .language-item strong {
+            color: var(--primary);
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+        .loading,
+        .error {
+            padding: 50px 20px;
+            text-align: center;
+            color: var(--muted);
+        }
+
+        .error {
+            color: #b91c1c;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 700px) {
+            .toolbar {
+                margin: 12px 12px 0;
+            }
+
+            .resume {
+                margin: 10px 0 20px;
+                padding: 30px 22px;
+            }
+
+            .header {
+                grid-template-columns: 78px minmax(0, 1fr);
+                gap: 12px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            .profile-photo {
+                width: 78px;
+                height: 78px;
+            }
+
+            .contact {
+                grid-column: 1 / -1;
+                align-items: flex-end;
+                padding-top: 5px;
+            }
+
+            .contact-item {
+                justify-content: flex-end;
+            }
+
+            .achievement-card {
+                grid-template-columns: 1fr;
+                gap: 3px;
+            }
+
+            .achievement-result {
+                text-align: left;
+            }
+
+            .achievement-associated {
+                grid-column: auto;
+            }
+        }
+
+        /* Print */
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 13mm;
+            }
+
+            body {
+                background: white;
+                font-size: 11px;
+            }
+
+            .toolbar {
+                display: none;
+            }
+
+            .resume {
+                max-width: none;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+
+            section {
+                margin-top: 19px;
+            }
+
+            .header {
+                grid-template-columns: 95px minmax(0, 1fr) 195px;
+                gap: 15px;
+                padding-bottom: 18px;
+            }
+
+            .profile-photo {
+                width: 90px;
+                height: 90px;
+            }
+
+            .contact {
+                font-size: 10px;
+                gap: 6px;
+            }
+
+            .contact-icon {
+                width: 13px;
+                height: 13px;
+                flex-basis: 13px;
+            }
+
+            .section-content {
+                padding-left: 12px;
+            }
+
+            .item {
+                margin-bottom: 12px;
+            }
+
+            .project-link,
+            .contact-item a {
+                color: var(--accent);
+                text-decoration: underline;
+            }
+
+            * {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="toolbar">
+        <button class="toolbar-button download-button" type="button" onclick="downloadPdf(this)">
+            Download PDF
+        </button>
+        <button class="toolbar-button print-button" type="button" onclick="window.print()">
+            Print
+        </button>
+    </div>
+
+    <main id="resume" class="resume">
+        <div class="loading">Loading resume...</div>
+    </main>
+
+    <script>
+
+        async function downloadPdf(button) {
+            if (typeof html2pdf !== "function") {
+                alert("The PDF generator could not be loaded. Check your internet connection and try again.");
+                return;
+            }
+
+            const resume = document.getElementById("resume");
+            if (resume.querySelector(".loading, .error")) {
+                alert("The resume is not ready yet. Please wait for it to finish loading.");
+                return;
+            }
+
+            const originalLabel = button.textContent;
+            button.disabled = true;
+            button.textContent = "Preparing PDF...";
+
+            try {
+                await document.fonts.ready;
+                await Promise.all(
+                    Array.from(resume.images, image => image.decode())
+                );
+
+                const name = resume.querySelector("h1")?.textContent.trim() || "Resume";
+                const filename = name.replace(/[^\w-]+/g, "_").replace(/^_+|_+$/g, "")
+                    || "Resume";
+
+                await html2pdf()
+                    .set({
+                        enableLinks: true,
+                        filename: `${filename}.pdf`,
+                        image: { type: "jpeg", quality: 0.98 },
+                        html2canvas: {
+                            backgroundColor: "#ffffff",
+                            scale: 2,
+                            scrollY: 0,
+                            useCORS: true
+                        },
+                        jsPDF: {
+                            format: "a4",
+                            orientation: "portrait",
+                            unit: "mm"
+                        },
+                        margin: 10,
+                        pagebreak: { mode: ["css", "legacy"] }
+                    })
+                    .from(resume)
+                    .save();
+            } catch (error) {
+                console.error("PDF download failed:", error);
+                alert(`Could not download the PDF: ${error.message}`);
+            } finally {
+                button.disabled = false;
+                button.textContent = originalLabel;
+            }
+        }
+
+        // Escape HTML.
+        const escapeHtml = (value = "") =>
+            String(value).replace(/[&<>"']/g, char => ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#39;"
+            }[char]));
+
+        // Validate URLs.
+        // Supports relative asset paths and absolute URLs.
+        const safeUrl = value => {
+            try {
+                const url = new URL(value, window.location.href);
+                const isRelativePath = !/^[a-z][a-z\d+.-]*:/i.test(value)
+                    && !value.startsWith("//");
+                const isLocalFile = window.location.protocol === "file:"
+                    && url.protocol === "file:"
+                    && isRelativePath;
+
+                return ["http:", "https:"].includes(url.protocol) || isLocalFile
+                    ? escapeHtml(url.href)
+                    : "#";
+
+            } catch {
+                return "#";
+            }
+        };
+
+        // Normalize external URLs.
+        // Supports both:
+        // github.com/username
+        // https://github.com/username
+        const normalizeExternalUrl = value => {
+            if (!value) return "";
+
+            const input = String(value).trim();
+
+            const urlWithProtocol = /^https?:\/\//i.test(input)
+                ? input
+                : `https://${input}`;
+
+            try {
+                const url = new URL(urlWithProtocol);
+
+                return ["http:", "https:"].includes(url.protocol)
+                    ? escapeHtml(url.href)
+                    : "";
+
+            } catch {
+                return "";
+            }
+        };
+
+        // Format JSON keys.
+        // work_experience -> Work Experience
+        // data_structures_and_algo -> Data Structures And Algo
+        const formatLabel = key =>
+            key
+                .replace(/_/g, " ")
+                .replace(/\b\w/g, character => character.toUpperCase());
+
+        // Format dates.
+        const formatDate = value => {
+            if (!value) return "Present";
+
+            const date = new Date(
+                value + (value.length === 10 ? "T00:00:00" : "")
+            );
+
+            return Number.isNaN(date.getTime())
+                ? escapeHtml(value)
+                : date.toLocaleDateString("en", {
+                    month: "short",
+                    year: "numeric"
+                });
+        };
+
+        const dateRange = (start, end) =>
+            `${formatDate(start)} – ${formatDate(end)}`;
+
+        // Generic section renderer.
+        function renderSection(key, content) {
+            if (!content) return "";
+
+            return `
+                <section>
+                    <h2>${escapeHtml(formatLabel(key))}</h2>
+
+                    <div class="section-content">
+                        ${content}
+                    </div>
+                </section>
+            `;
+        }
+
+        // Contact icons.
+        const contactIcons = {
+            phone: `
+                <svg class="contact-icon" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                    19.8 19.8 0 0 1-8.63-3.07
+                    19.4 19.4 0 0 1-6-6
+                    A19.8 19.8 0 0 1 2.12 4.2
+                    2 2 0 0 1 4.11 2h3
+                    a2 2 0 0 1 2 1.72
+                    c.12.96.35 1.9.69 2.8
+                    a2 2 0 0 1-.45 2.11L8.08 9.91
+                    a16 16 0 0 0 6 6l1.27-1.27
+                    a2 2 0 0 1 2.11-.45
+                    c.9.34 1.84.57 2.8.69
+                    A2 2 0 0 1 22 16.92z"/>
+                </svg>
+            `,
+
+            email: `
+                <svg class="contact-icon" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                    <path d="m3 7 9 6 9-6"/>
+                </svg>
+            `,
+
+            github: `
+                <svg class="contact-icon" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6
+                    v-3.87a3.37 3.37 0 0 0-.94-2.61
+                    c3.14-.35 6.44-1.54 6.44-7
+                    A5.44 5.44 0 0 0 19 4.77
+                    5.07 5.07 0 0 0 18.91 1
+                    S17.73.65 15 2.48a13.38 13.38 0 0 0-7 0
+                    C5.27.65 4.09 1 4.09 1
+                    A5.07 5.07 0 0 0 4 4.77
+                    a5.44 5.44 0 0 0-1.5 3.78
+                    c0 5.42 3.3 6.61 6.44 7
+                    A3.37 3.37 0 0 0 8 18.13V22"/>
+                </svg>
+            `,
+
+            linkedin: `
+                <svg class="contact-icon" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7
+                    a2 2 0 0 0-4 0v7h-4v-7
+                    a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
+                </svg>
+            `,
+
+            location: `
+                <svg class="contact-icon" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 5-8 12-8 12S4 15 4 10
+                    a8 8 0 1 1 16 0Z"/>
+                    <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+            `
+        };
+
+        // Render one contact item.
+        // Icon is intentionally placed after the text.
+        function renderContactItem(type, value, href = "") {
+            if (!value) return "";
+
+            const target = /^https?:\/\//i.test(href)
+                ? ' target="_blank" rel="noopener noreferrer"'
+                : "";
+            const content = href
+                ? `<a href="${href}"${target}>${escapeHtml(value)}</a>`
+                : `<span>${escapeHtml(value)}</span>`;
+
+            return `
+                <div class="contact-item">
+                    ${content}
+                    ${contactIcons[type] || ""}
+                </div>
+            `;
+        }
+
+        // Render resume.
+        function renderResume(data) {
+
+            const person = data.personal_information || {};
+
+            // Personal information.
+            // Location stays at the end.
+            const contact = [
+                renderContactItem(
+                    "email",
+                    person.email,
+                    person.email ? `mailto:${escapeHtml(person.email)}` : ""
+                ),
+
+                renderContactItem(
+                    "phone",
+                    person.phone,
+                    person.phone ? `tel:${escapeHtml(person.phone)}` : ""
+                ),
+
+                renderContactItem(
+                    "github",
+                    person.github,
+                    normalizeExternalUrl(person.github)
+                ),
+
+                renderContactItem(
+                    "linkedin",
+                    person.linkedin,
+                    normalizeExternalUrl(person.linkedin)
+                ),
+
+                renderContactItem(
+                    "location",
+                    person.location
+                )
+
+            ].filter(Boolean).join("");
+
+            // Work experience.
+            const experience = (data.work_experience || [])
+                .map(job => `
+                    <article class="item">
+
+                        <div class="item-heading">
+                            <h3>
+                                ${escapeHtml(job.company)}
+                            </h3>
+
+                            <span class="meta">
+                                ${dateRange(job.start, job.end)}
+                            </span>
+                        </div>
+                        
+                        <div class="subheading">
+                              ${escapeHtml(job.title)}
+                        </div>
+                        
+                        <p class="description">
+                            ${escapeHtml(job.description)}
+                        </p>
+
+                    </article>
+                `).join("");
+
+            // Projects.
+            const projects = (data.projects || [])
+                .map(project => {
+                    const projectUrl = normalizeExternalUrl(project.url);
+
+                    return `
+                        <article class="item">
+
+                            <div class="item-heading">
+                                <h3>${escapeHtml(project.name)}</h3>
+
+                                <div class="project-meta">
+                                    <span class="meta">
+                                        ${dateRange(project.start, project.end)}
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="project-details">
+                                <div class="subheading">
+                                    ${escapeHtml(project.role || "")}
+                                </div>
+                                ${projectUrl ? `
+                                    <a
+                                        class="project-link"
+                                        href="${projectUrl}"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >${escapeHtml(projectUrl)}</a>
+                                ` : ""}
+                            </div>
+
+                            <p class="description">
+                                ${escapeHtml(project.description || "")}
+                            </p>
+<!-- project/photo:
+                            ${(project.images || []).length ? `
+                                <div class="project-gallery">
+                                    ${project.images.map(src => `
+                                        <img
+                                            src="${safeUrl(src)}"
+                                            alt="${escapeHtml(project.name)} screenshot"
+                                            loading="lazy"
+                                        >
+                                    `).join("")}
+                                </div>
+                            ` : ""}
+-->
+                        </article>
+                    `;
+                }).join("");
+
+            // Skills generated from JSON keys.
+            const skills = Object.entries(data.skills || {})
+                .map(([key, values]) => {
+
+                    if (!Array.isArray(values) || !values.length) {
+                        return "";
+                    }
+
+                    return `
+                        <p class="skill-group">
+
+                            <strong>
+                                ${escapeHtml(formatLabel(key))}:
+                            </strong>
+
+                            <span class="tags">
+                                ${values.map(escapeHtml).join(" · ")}
+                            </span>
+
+                        </p>
+                    `;
+
+                }).join("");
+
+            // Education.
+            const education = (data.education || [])
+                .map(item => `
+                    <article class="item">
+
+                        <div class="item-heading">
+                            <h3>${escapeHtml(item.institution)}</h3>
+
+                            <span class="meta">
+                                ${dateRange(item.start, item.end)}
+                            </span>
+                        </div>
+
+                        <p class="description">
+                            ${escapeHtml(item.degree)}
+                        </p>
+
+                    </article>
+                `).join("");
+
+            // Languages.
+            const languages = (data.languages || [])
+                .map(item => `
+                    <p class="language-item">
+                        <strong>${escapeHtml(item.language)}:</strong>
+                        <span>${escapeHtml(item.proficiency)}</span>
+                    </p>
+                `).join("");
+
+            // Achievements.
+            const achievements = (data.achievements || [])
+                .map(item => `
+                    <article class="achievement-card">
+
+                        <div class="achievement-name">
+                            ${escapeHtml(item.name)}
+                        </div>
+
+                        <div class="achievement-result">
+                            ${escapeHtml(item.result)}
+                        </div>
+
+                        ${item.associated ? `
+                            <div class="achievement-associated">
+                                ${escapeHtml(item.associated)}
+                            </div>
+                        ` : ""}
+
+                    </article>
+                `).join("");
+
+            // Render complete resume.
+            document.getElementById("resume").innerHTML = `
+
+                <header class="header">
+
+                    <!-- First column: Photo -->
+                    ${person.photo ? `
+                        <img
+                            class="profile-photo"
+                            src="${safeUrl(person.photo)}"
+                            alt="${escapeHtml(person.full_name || "Profile photo")}"
+                        >
+                    ` : `<div></div>`}
+
+                    <!-- Second column: Name and title -->
+                    <div class="header-identity">
+                        <h1>
+                            ${escapeHtml(person.full_name || "Resume")}
+                        </h1>
+
+                        <p class="professional-title">
+                            ${escapeHtml(person.professional_title || "")}
+                        </p>
+                    </div>
+
+                    <!-- Third column: Right-aligned contacts -->
+                    <div class="contact">
+                        ${contact}
+                    </div>
+
+                </header>
+
+                ${renderSection("summary", data.summary
+                ? `<p class="description">${escapeHtml(data.summary)}</p>`
+                : ""
+            )}
+
+                ${renderSection("work_experience", experience)}
+
+                ${renderSection("projects", projects)}
+
+                ${renderSection("skills", skills)}
+
+                ${renderSection("education", education)}
+
+                ${renderSection("languages", languages
+                ? languages
+                : ""
+            )}
+
+                ${renderSection("achievements", achievements)}
+
+            `;
+        }
+
+        // Load JSON data.
+        fetch("./data.json")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(
+                        `Could not load data.json (${response.status})`
+                    );
+                }
+
+                return response.json();
+            })
+            .then(renderResume)
+            .catch(error => {
+
+                document.getElementById("resume").innerHTML = `
+                    <div class="error">
+                        Unable to load your resume data.
+
+                        <br>
+
+                        ${escapeHtml(error.message)}
+
+                        <br><br>
+
+                        Make sure data.json is in the same folder
+                        as resume.html.
+                    </div>
+                `;
+
+                console.error(error);
+            });
+
+    </script>
+
+</body>
+
+</html>
