@@ -100,8 +100,8 @@
         }
 
         .profile-photo {
-            width: 105px;
-            height: 105px;
+            width: 120px;
+            height: 120px;
             object-fit: cover;
             border-radius: 50%;
             border: 3px solid #edf2f7;
@@ -896,8 +896,8 @@
 
                 </header>
 
-                ${renderSection("summary", data.summary
-                ? `<p class="description">${escapeHtml(data.summary)}</p>`
+                ${renderSection("summary", data.about
+                ? `<p class="description">${escapeHtml(data.about)}</p>`
                 : ""
             )}
 

@@ -9,7 +9,8 @@
         "linkedin": "https://linkedin.com/in/mithun1st",
         "location": "Dhaka, Bangladesh"
     },
-    "summary": "I'm a highly skilled and motivated Software Engineer with a Bachelor's degree in Computer Science and Engineering. My expertise spans both frontend and backend development, where I leverage my strong problem-solving skills to create efficient and innovative solutions. With a passion for technology and a commitment to staying current with industry trends, I bring a combination of technical proficiency and creative problem-solving to any software development project.",
+    "about": "I'm a highly skilled and motivated Software Engineer with a Bachelor's degree in Computer Science and Engineering. My expertise spans both frontend and backend development, where I leverage my strong problem-solving skills to create efficient and innovative solutions. With a passion for technology and a commitment to staying current with industry trends, I bring a combination of technical proficiency and creative problem-solving to any software development project.",
+    "summary": "As a passionate Software Engineer, I thrive on turning ideas into innovative, practical, and reliable technology solutions. My expertise spans the entire software development spectrum- from frontend and backend engineering to mobile application development, IoT, and hardware programming. With experience in Flutter, Go, Node.js, SQL, Java, and embedded systems, I build solutions that connect software, hardware, and real-world business needs. Whether it's developing a cross-platform application, designing backend systems and APIs, integrating IoT devices, or building custom software from the ground up, I enjoy solving complex problems and bringing ideas to life. I believe great technology goes beyond writing code- it's about understanding challenges, creating meaningful solutions, and delivering real value.",
     "work_experience": [
         {
             "company": "Efficient Software Solutions",
@@ -51,6 +52,7 @@
             "url": "https://github.com/mithun1st/ptimer",
             "description": "A command-line interface (CLI) pomodoro timer application built in Go that helps you boost productivity with customizable focus sessions.\nInstall ptimer:\n$ brew install mithun1st/mh/ptimer\n1. Three Pomodoro Modes\n2. Notification Support\n3. View Log\n4. Quick Timer With Flag\nStay focused, stay productive.",
             "images": [
+                "assets/pomodoro/0.png",
                 "assets/pomodoro/1.png",
                 "assets/pomodoro/2.png",
                 "assets/pomodoro/3.png",
